@@ -1,12 +1,60 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
     margin: 0 auto;
     max-width: 800px;
-    padding: 20px;
+    padding: 40px;
   }
+
 
 .menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.intro-bg {
+  height: 100vh;
+}
+
+.intro-bg, .prices, .services, .contacts {
+  width: 100vw;
+  color: #fff;
+  background-color: black;
+}
+
+.intro-bg {
+  position: relative;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url(./images/stock.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.feedback {
+  background-color: darkgoldenrod;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+}
+
+.prices-header {
+  display: inline-block;
+  padding: 10px;
+  border: 5px solid darkgoldenrod;
+  color: darkgoldenrod;
+  cursor: pointer;
+}
+
+.prices-triangle {
+  display: table;
+  border: 30px solid transparent;
+  border-top: 30px solid darkgoldenrod;
+  margin: 0 auto;
+  cursor: pointer;
 }
