@@ -1,0 +1,67 @@
+
+.menu-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-menu-icon {
+    text-align: right;
+}
+
+.main-menu-wrapper {
+    position: absolute;
+    transform: translateX(-60px);
+}
+
+
+/*Оформляем главное меню, задаём ШИРИНУ, убираем отступы и маркеры пунктов*/
+.main-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+}
+/*Оформляем ccылки гл. меню, задаём БЛОЧНЫЙ ВИД, чтобы было удобно нажимать и оформлять*/
+/*задаём цвет, внутренние отступы и убираем подчёркивание у ссылок*/
+.main-menu a {
+    color: #fff;
+    display: block;
+    padding: 8px 14px;
+    text-decoration: none;
+}
+/*ГРАНИЦЫ элементов списков ГЛАВНОГО МЕНЮ*/
+.main-menu > li {
+    margin-bottom: -1px;
+    /* border: 1px solid #E5E5E5; */
+}
+/*Оформляем поведение ccылок главного меню при наведении*/
+.main-menu a:hover {
+    color: darkgoldenrod;
+}
+/*При необходимости можно добавлять активным ссылкам класс active*/
+
+.main-menu-container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.main-menu-bar1, .main-menu-bar2, .main-menu-bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first main-menu-bar */
+.change .main-menu-bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second main-menu-bar */
+.change .main-menu-bar2 {opacity: 0;}
+
+/* Rotate last main-menu-bar */
+.change .main-menu-bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}

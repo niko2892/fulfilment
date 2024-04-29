@@ -14,7 +14,7 @@ body, html {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
 }
 
 .intro-bg {
@@ -34,7 +34,12 @@ body, html {
   background-position: center;
 }
 
+.header {
+  margin-top: 40vh;
+}
+
 .feedback {
+  width: 100vw;
   background-color: darkgoldenrod;
 }
 
@@ -56,5 +61,22 @@ body, html {
   border: 30px solid transparent;
   border-top: 30px solid darkgoldenrod;
   margin: 0 auto;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+  width: 0px;
+  transition: all 1s;
+}
+
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: 10px solid transparent;
+  border-bottom: 10px solid rgb(104, 65, 65);
+  z-index: 999;
   cursor: pointer;
 }

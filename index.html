@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
     <title>fulfilment</title>
 </head>
 
@@ -13,7 +14,24 @@
         <div class="container">
             <section class="menu">
                 <h2 class="company-title">Би и Бо</h2>
-                <div>меню</div>
+                <div class="menu-wrappper">
+                    <div class="main-menu-icon">
+                        <div class="main-menu-container" onclick="clickOnMenu(this)">
+                            <div class="main-menu-bar1"></div>
+                            <div class="main-menu-bar2"></div>
+                            <div class="main-menu-bar3"></div>
+                          </div>
+                    </div>
+                    <nav class="main-menu-wrapper hidden">
+                        <ul class="main-menu">
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#prices">Прайс-лист</a></li>
+                            <li><a href="#services">Услуги</a></li>
+                            <li><a href="#feedback">Отзывы</a></li>
+                            <li><a href="#contacts">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </section>
 
             <header class="header">
@@ -24,14 +42,17 @@
     </div>
 
     <section class="prices">
+        <a name="prices"></a>
         <div class="container">
             <h2 class="prices-header">Прайс-лист</h2>
-            <!-- <p>стрелка вниз</p>-->
             <div class="prices-triangle"></div>
         </div>
     </section>
 
+    <a href="#" id="back-to-top"><i class="fa fa-chevron-up hidden"></i></a>
+
     <section class="services">
+        <a name="services"></a>
         <div class="container">
             <h2>Услуги</h2>
             <p>Приемка товара</p>
@@ -43,6 +64,7 @@
     </section>
 
     <section class="feedback">
+        <a name="feedback"></a>
         <div class="container">
             <h2>Отзывы</h2>
             <p>Отзыв 1</p>
@@ -66,6 +88,7 @@
     </section>
 
     <section class="contacts">
+        <a name="contacts"></a>
         <div class="container">
             <h2>Контакты</h2>
             <p>Контакт 1</p>
@@ -79,6 +102,7 @@
             <p>&copy; 2024 Би и Бо</p>
         </div>
     </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>
